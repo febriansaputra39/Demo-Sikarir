@@ -1,17 +1,17 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { NotificationProvider } from './contexts/NotificationContext';
 import AppRoutes from './routes/AppRoutes';
 
 export function App() {
   return (
-    <BrowserRouter basename="/Demo-Sikarir">
+    <HashRouter>
       <NotificationProvider>
         <AuthProvider>
           <AppRoutes />
         </AuthProvider>
       </NotificationProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
