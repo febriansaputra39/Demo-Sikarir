@@ -5,13 +5,13 @@ import AppRoutes from './routes/AppRoutes';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Demo-Sikarir">
       <NotificationProvider>
         <AuthProvider>
           <AppRoutes />
         </AuthProvider>
       </NotificationProvider>
-    <BrowserRouter basename="/Demo-Sikarir">  
+    </BrowserRouter>
   );
 }
 
