@@ -11,7 +11,7 @@ export function App() {
           <AppRoutes />
         </AuthProvider>
       </NotificationProvider>
-    </BrowserRouter>
+    <BrowserRouter basename="/Demo-Sikarir">  
   );
 }
 
